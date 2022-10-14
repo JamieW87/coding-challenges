@@ -8,5 +8,6 @@ func main() {
 	//fmt.Println("Indices of numbers that reach target:", result)
 
 	//Palindrome
-
+	//isPal := problems.IsPalindrome(121)
+	//fmt.Println(isPal)
 }
