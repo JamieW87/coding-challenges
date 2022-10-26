@@ -18,6 +18,5 @@ package problems
 //Given a roman numeral, convert it to an integer.
 
 func RomanToInt(s string) int {
-
-	return 0
+	
 }
