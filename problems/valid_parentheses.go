@@ -15,5 +15,5 @@ package problems
 //Output: true
 
 func isValid(s string) bool {
-
+	return false
 }

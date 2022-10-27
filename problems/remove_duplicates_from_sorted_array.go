@@ -39,5 +39,6 @@ package problems
 //It does not matter what you leave beyond the returned k (hence they are underscores).
 
 func removeDuplicates(nums []int) int {
+	return 0
 
 }

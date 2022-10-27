@@ -1,5 +1,10 @@
 package main
 
+import (
+	"fmt"
+	"leet-code-playingz/problems"
+)
+
 func main() {
 
 	//TwoSum
@@ -10,4 +15,11 @@ func main() {
 	//Palindrome
 	//isPal := problems.IsPalindrome(121)
 	//fmt.Println(isPal)
+
+	//RemoveElement
+	reIntSlice := []int{0, 1, 2, 2, 3, 0, 4, 2}
+	res := problems.RemoveElement(reIntSlice, 2)
+
+	fmt.Println(res)
+
 }

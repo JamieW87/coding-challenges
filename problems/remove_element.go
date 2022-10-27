@@ -1,5 +1,9 @@
 package problems
 
+import (
+	"fmt"
+)
+
 //Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. The relative order of the elements may be changed.
 //
 //Since it is impossible to change the length of the array in some languages, you must instead have the result be placed in the first part of the array nums. More formally, if there are k elements after removing the duplicates, then the first k elements of nums should hold the final result. It does not matter what you leave beyond the first k elements.
@@ -35,6 +39,35 @@ package problems
 //Explanation: Your function should return k = 2, with the first two elements of nums being 2.
 //It does not matter what you leave beyond the returned k (hence they are underscores).
 
-func removeElement(nums []int, val int) int {
+func RemoveElement(nums []int, val int) int {
 
+	//Had to make it loop twice because it was missing the 2nd 2
+	for x := 0; x < 2; x++ {
+		for i := 0; i < len(nums); i++ {
+			if nums[i] == val {
+				nums = removeIndex(nums, i)
+			}
+		}
+	}k,
+
+	fmt.Println(nums)
+	return len(nums)
 }
+
+func removeIndex(s []int, index int) []int {
+
+	return append(s[:index], s[index+1:]...)
+}
+
+//Tried this but then realised question stipulated that you're not allowed to allocate a new array:
+//func RemoveElement(nums []int, val int) int {
+//
+//	newNums := make([]int, 0)
+//
+//	for i := 0; i < len(nums); i++ {
+//		if nums[i] != val {
+//			newNums = append(newNums, nums[i])
+//		}
+//	}
+//	return len(newNums)
+//}

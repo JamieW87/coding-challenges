@@ -17,6 +17,37 @@ package problems
 //C can be placed before D (500) and M (1000) to make 400 and 900.
 //Given a roman numeral, convert it to an integer.
 
+var RomanNumerals = map[rune]int{
+	'I': 1,
+	'V': 5,
+	'X': 10,
+	'L': 50,
+	'C': 100,
+	'D': 500,
+	'M': 1000,
+}
+
 func RomanToInt(s string) int {
-	
+
+	//Create int vars to set later
+	sum := 0
+	greatest := 0
+
+	//Iterates over the slice in reverse
+	for i := len(s) - 1; i >= 0; i-- {
+		//Define the letter, map it to the corresponding int in the map
+		letter := s[i]
+		num := RomanNumerals[rune(letter)]
+		//If the number is the biggest so far, set it to num
+		//Assign the number to greatest, add it to sum
+		if num >= greatest {
+			greatest = num
+			sum = sum + num
+			continue
+		}
+		//If the number isnt the greatest so far, minus it from sum
+		sum = sum - num
+	}
+	return sum
+
 }

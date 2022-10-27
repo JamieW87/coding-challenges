@@ -23,6 +23,11 @@ package problems
 //0 <= strs[i].length <= 200
 //strs[i] consists of only lowercase English letters.
 
-func longestCommonPrefix(strs []string) string {
+func LongestCommonPrefix(strs []string) string {
+
+	for i := 0; i < len(strs); i++ {
+	}
+
+	return ""
 
 }
