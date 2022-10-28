@@ -17,9 +17,10 @@ func main() {
 	//fmt.Println(isPal)
 
 	//RemoveElement
-	reIntSlice := []int{0, 1, 2, 2, 3, 0, 4, 2}
-	res := problems.RemoveElement(reIntSlice, 2)
+	//reIntSlice := []int{0, 1, 2, 2, 3, 0, 4, 2}
+	//res := problems.RemoveElement(reIntSlice, 2)
 
+	//RomanToInteger
+	res := problems.RomanToInt("VI")
 	fmt.Println(res)
-
 }
