@@ -1,26 +1,21 @@
 package main
 
-import (
-	"fmt"
-	"leet-code-playingz/problems"
-)
-
 func main() {
 
-	//TwoSum
+	//--TwoSum--
 	//intSlice := []int{3, 2, 4}
 	//result := problems.TwoSum(intSlice, 6)
 	//fmt.Println("Indices of numbers that reach target:", result)
 
-	//Palindrome
+	//--Palindrome--
 	//isPal := problems.IsPalindrome(121)
 	//fmt.Println(isPal)
 
-	//RemoveElement
+	//--RemoveElement--
 	//reIntSlice := []int{0, 1, 2, 2, 3, 0, 4, 2}
 	//res := problems.RemoveElement(reIntSlice, 2)
 
-	//RomanToInteger
-	res := problems.RomanToInt("VI")
-	fmt.Println(res)
+	//--RomanToInteger--
+	//res := problems.RomanToInt("VI")
+	//fmt.Println(res)
 }

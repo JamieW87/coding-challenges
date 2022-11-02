@@ -1,4 +1,4 @@
-# leet-code-playingz
+# Coding challenges
 Jamie's collection of leet code wins and (mostly) fails.
 
 ## Problems solved:
@@ -14,4 +14,8 @@ Had problem with `for n != 0 {}` not dealing with negative integers
 
 ### Roman to integer
 [Leet Roman to integer](https://leetcode.com/problems/roman-to-integer/)
+Correct submission first attempt. Once I'd figured out to use a map[rune]int
+
+### Merge two lists 
+
 
