@@ -25,10 +25,11 @@ func (l *linkedList) prepend(n *node) {
 
 func (l *linkedList) deleteWithValue(value int) {
 	previousToDelete := l.head
-	//Loops until it finds a match then skips the node that needs to be deleted
+	//Loops until it finds a match, sets previousToDelete to the next node
 	for previousToDelete.next.val != value {
 		previousToDelete = previousToDelete.next
 	}
+	//This sets the node that needs to be deleted (previousToDelete.next) and sets its to the next value after that, removing it from the list.
 	previousToDelete.next = previousToDelete.next.next
 	l.length--
 }
