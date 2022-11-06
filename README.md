@@ -17,5 +17,8 @@ Had problem with `for n != 0 {}` not dealing with negative integers
 Correct submission first attempt. Once I'd figured out to use a map[rune]int
 
 ### Merge two lists 
+[Leet merge two sorted lists](https://leetcode.com/problems/merge-two-sorted-lists/)
+Required some foundational linked list research. Got it in the end but took a while
+Exposure to linked lists is minimal
 
 

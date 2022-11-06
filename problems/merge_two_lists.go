@@ -17,30 +17,32 @@ type ListNode struct {
 }
 
 func MergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
-
-	ln := &ListNode{
-		Val:  0,
-		Next: nil,
+	if list1 != nil && list2 == nil {
+		return list1
+	}
+	if list2 != nil && list1 == nil {
+		return list2
+	}
+	if list1 == nil && list2 == nil {
+		return nil
 	}
 
-	return ln
+	//Create new node type to write the two lists into
+	newNode := new(ListNode)
+
+	//If list1s value is bigger than list2s value then write list2s value to the new node
+	//Call the function again so that it keeps doing the above, until list1s value is smaller
+	//then it writes list2s value to the new node. Returns the new node with the ordered values
+	if list1.Val >= list2.Val {
+		newNode.Val = list2.Val
+		list2 = list2.Next
+		newNode.Next = MergeTwoLists(list1, list2)
+	} else {
+		newNode.Val = list1.Val
+		list1 = list1.Next
+		newNode.Next = MergeTwoLists(list1, list2)
+	}
+
+	return newNode
 
 }
-
-//Solution:
-//func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
-//	if l1 == nil && l2 != nil { return l2 }
-//	if l1 != nil && l2 == nil { return l1 }
-//	if l1 == nil && l2 == nil { return nil }
-//	newNode := new(ListNode)
-//	if l1.Val >= l2.Val {
-//		newNode.Val = l2.Val
-//		l2 = l2.Next
-//		newNode.Next = mergeTwoLists(l1, l2)
-//	} else {
-//		newNode.Val = l1.Val
-//		l1 = l1.Next
-//		newNode.Next = mergeTwoLists(l1, l2)
-//	}
-//	return newNode
-//}
