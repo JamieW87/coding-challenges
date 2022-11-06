@@ -1,5 +1,10 @@
 package main
 
+import (
+	"fmt"
+	"leet-code-playingz/problems"
+)
+
 func main() {
 
 	//--TwoSum--
@@ -18,5 +23,9 @@ func main() {
 	//--RomanToInteger--
 	//res := problems.RomanToInt("VI")
 	//fmt.Println(res)
+
+	//--FirstUniqueCharInString
+	charIndex := problems.FirstUniqChar("loveleetcode")
+	fmt.Println(charIndex)
 
 }
