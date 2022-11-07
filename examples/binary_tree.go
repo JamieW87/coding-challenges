@@ -6,7 +6,22 @@ type Node struct {
 	Right *Node
 }
 
-func (n *Node) insert(k int) {
+type BinaryTree struct {
+	root *Node
+}
+
+//Standard insert fuction to create a new binary tree (Where root is nil)
+func (t *BinaryTree) insert(data int) *BinaryTree {
+	if t.root == nil {
+		t.root = &Node{Key: data, Left: nil, Right: nil}
+	} else {
+		t.insert(data)
+	}
+	return t
+}
+
+//Standard insert function to insert Nodes under a root
+func (n *Node) insertNode(k int) {
 	if n.Key < k {
 		//move right
 		if n.Right == nil {
@@ -14,14 +29,14 @@ func (n *Node) insert(k int) {
 			n.Right = &Node{Key: k}
 		} else {
 			//If node exists, run the code again, until insert
-			n.Right.insert(k)
+			n.Right.insertNode(k)
 		}
 	} else if n.Key > k {
 		//move left
 		if n.Left == nil {
 			n.Left = &Node{Key: k}
 		} else {
-			n.Left.insert(k)
+			n.Left.insertNode(k)
 		}
 	}
 }
