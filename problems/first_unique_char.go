@@ -3,7 +3,7 @@ package problems
 func FirstUniqChar(s string) int {
 
 	// Makes a map rune int
-	//Ranges over the string and assigns an index for every character (rune)
+	//Ranges over the string(s) and assigns every rune (j) to the map
 	m := make(map[rune]int, len(s))
 	for _, j := range s {
 		m[j]++

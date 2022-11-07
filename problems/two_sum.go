@@ -7,14 +7,17 @@ package problems
 
 func TwoSum(nums []int, target int) []int {
 
-	var slint []int
-	for i := 0; i < len(nums); i++ {
-		for x := i + 1; x < len(nums); x++ {
+	var sliceInt []int
+
+	for i := 0; i <= len(nums); i++ {
+		for x := 0; x <= len(nums); x++ {
 			if nums[i]+nums[x] == target {
-				slint = append(slint, i)
-				slint = append(slint, x)
+				sliceInt = append(sliceInt, i)
+				sliceInt = append(sliceInt, x)
 			}
 		}
 	}
-	return slint
+
+	return sliceInt
+
 }

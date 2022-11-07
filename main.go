@@ -1,10 +1,5 @@
 package main
 
-import (
-	"fmt"
-	"leet-code-playingz/problems"
-)
-
 func main() {
 
 	//--TwoSum--
@@ -25,7 +20,7 @@ func main() {
 	//fmt.Println(res)
 
 	//--FirstUniqueCharInString
-	charIndex := problems.FirstUniqChar("loveleetcode")
-	fmt.Println(charIndex)
+	//charIndex := problems.FirstUniqChar("loveleetcode")
+	//fmt.Println(charIndex)
 
 }
