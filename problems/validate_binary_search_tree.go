@@ -1,38 +1,31 @@
 package problems
 
-type Node struct {
-	Key   int
-	Left  *Node
-	Right *Node
+type TreeNode struct {
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
 }
 
-func IsValidBST(root *Node) bool {
+func IsValidBST(root *TreeNode) bool {
 
 	if root == nil {
 		return true
 	}
 
-	var isValid bool
-	rootLeft := new(Node)
-	rootRight := new(Node)
+	return isValidHelper(root, nil, nil)
 
-	if root.Left != nil {
-		if root.Key < root.Left.Key {
-			return false
-		} else {
-			rootLeft = root.Left
-			isValid = IsValidBST(rootLeft)
-		}
+}
+
+func isValidHelper(root *TreeNode, min, max interface{}) bool {
+
+	if root == nil {
+		return true
 	}
 
-	if root.Right != nil {
-		if root.Key > root.Right.Key {
-			return false
-		} else {
-			rootRight = root.Right
-			isValid = IsValidBST(rootRight)
-		}
+	if (min != nil && root.Val <= min.(int)) || (max != nil && root.Val >= max.(int)) {
+		return false
 	}
 
-	return isValid
+	return isValidHelper(root.Left, min, root.Val) && isValidHelper(root.Right, root.Val, max)
+
 }
