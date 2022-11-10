@@ -1,5 +1,10 @@
 package main
 
+import (
+	"fmt"
+	"leet-code-playingz/problems"
+)
+
 func main() {
 
 	//--TwoSum--
@@ -22,5 +27,10 @@ func main() {
 	//--FirstUniqueCharInString
 	//charIndex := problems.FirstUniqChar("loveleetcode")
 	//fmt.Println(charIndex)
+
+	//--ContainerWithMostWater
+	intSlice := []int{1, 8, 6, 2, 5, 4, 8, 3, 7}
+	res := problems.ContainerWithMostWater(intSlice)
+	fmt.Println(res)
 
 }
