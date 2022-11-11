@@ -32,6 +32,7 @@ func ContainerWithMostWater(h []int) int {
 	return m
 }
 
+//Returns smallest value
 func min(x, y int) int {
 	if x > y {
 		return y

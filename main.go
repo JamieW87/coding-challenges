@@ -17,7 +17,7 @@ func main() {
 	//fmt.Println(isPal)
 
 	//--RemoveElement--
-	//reIntSlice := []int{0, 1, 2, 2, 3, 0, 4, 2}
+	reIntSlice := []int{0, 1, 2, 2, 3, 0, 4, 2}
 	//res := problems.RemoveElement(reIntSlice, 2)
 
 	//--RomanToInteger--
@@ -30,7 +30,11 @@ func main() {
 
 	//--ContainerWithMostWater
 	intSlice := []int{1, 8, 6, 2, 5, 4, 8, 3, 7}
-	res := problems.ContainerWithMostWater(intSlice)
-	fmt.Println(res)
+	//res := problems.ContainerWithMostWater(intSlice)
+	//fmt.Println(res)
+
+	//--MatchingArrays
+	resArr := problems.MatchingArrays(intSlice, reIntSlice)
+	fmt.Println(resArr)
 
 }
