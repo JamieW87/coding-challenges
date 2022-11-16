@@ -1,5 +1,6 @@
 package problems
 
+//HackerRank
 func ReverseArray(a []int32) []int32 {
 	//If incoming array is nil, return a nil array
 	if a == nil {

@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"leet-code-playingz/problems"
+	"leet-code-playingz/problems/arrays"
 )
 
 func main() {

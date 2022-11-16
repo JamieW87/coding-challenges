@@ -1,5 +1,5 @@
 # Coding challenges
-Jamie's collection of leet code wins and (mostly) fails.
+A dump of my collection of coding challenge wins and (mostly) fails.
 
 ## Problems solved:
 
