@@ -1,6 +1,6 @@
 package problems
 
-//Given two integer arrays. Return an integer array containing the values that appear in both arrays.
+//Given two integer arrays. Return an integer array containing only the values that appear in both arrays.
 
 func MatchingArrays(arrA []int, arrB []int) []int {
 

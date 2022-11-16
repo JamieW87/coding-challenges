@@ -23,5 +23,9 @@ Exposure to linked lists is minimal
 
 ### First Unique Char in a string
 
+### Reverse Array
+[HackerRank reverse an integer array](https://www.hackerrank.com/challenges/arrays-ds/problem)
+
+
 
 
