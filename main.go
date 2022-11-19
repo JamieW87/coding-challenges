@@ -1,11 +1,17 @@
 package main
 
-import (
-	"fmt"
-	"leet-code-playingz/problems/arrays"
-)
+import "fmt"
 
 func main() {
+
+	m := make(map[int]int)
+
+	m[0] = 5
+	m[1] = 10
+	m[2] = 15
+
+	fmt.Println(m)
+	fmt.Println(m[1])
 
 	//--TwoSum--
 	//intSlice := []int{3, 2, 4}
@@ -29,7 +35,7 @@ func main() {
 	//fmt.Println(charIndex)
 
 	//--ContainerWithMostWater
-	intSlice := []int32{1, 8, 6, 2, 5, 4, 8, 3, 7}
+	//intSlice := []int32{1, 8, 6, 2, 5, 4, 8, 3, 7}
 	//res := problems.ContainerWithMostWater(intSlice)
 	//fmt.Println(res)
 
@@ -38,7 +44,16 @@ func main() {
 	//fmt.Println(resArr)
 
 	//--SortArray
-	sortedSlice := problems.SortArray(intSlice)
-	fmt.Println(sortedSlice)
+	//sortedSlice := problems.SortArray(intSlice)
+	//fmt.Println(sortedSlice)
+
+	//--DiagonalDifference
+	//sl := []int32{2, 3, 4}
+	//sl2 := []int32{5, 6, 7}
+	//sl3 := []int32{1, 2, 5}
+	//slice := [][]int32{sl, sl2, sl3}
+	//
+	//sum := problems.DiagonalDifference(slice)
+	//fmt.Println("Sum: ", sum)
 
 }
