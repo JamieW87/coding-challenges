@@ -1,17 +1,6 @@
 package main
 
-import "fmt"
-
 func main() {
-
-	m := make(map[int]int)
-
-	m[0] = 5
-	m[1] = 10
-	m[2] = 15
-
-	fmt.Println(m)
-	fmt.Println(m[1])
 
 	//--TwoSum--
 	//intSlice := []int{3, 2, 4}
