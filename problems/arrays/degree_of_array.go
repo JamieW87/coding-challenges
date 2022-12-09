@@ -16,6 +16,6 @@ package problems
 //[1, 2, 2, 3, 1], [1, 2, 2, 3], [2, 2, 3, 1], [1, 2, 2], [2, 2, 3], [2, 2]
 //The shortest length is 2. So return 2.
 
-func DegreeOfArray(arr []int32) int32 {
-
-}
+//func DegreeOfArray(arr []int32) int32 {
+//
+//}

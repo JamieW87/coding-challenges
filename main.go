@@ -1,5 +1,10 @@
 package main
 
+import (
+	"fmt"
+	problems "leet-code-playingz/problems/strings"
+)
+
 func main() {
 
 	//--TwoSum--
@@ -44,5 +49,8 @@ func main() {
 	//
 	//sum := problems.DiagonalDifference(slice)
 	//fmt.Println("Sum: ", sum)
+
+	length := problems.LengthOfLastWord("hello worldddd")
+	fmt.Println(length)
 
 }
