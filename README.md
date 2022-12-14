@@ -23,9 +23,14 @@ Exposure to linked lists is minimal
 
 ### First Unique Char in a string
 
+### Container With Most Water
+
+
 ### Reverse Array
 [HackerRank reverse an integer array](https://www.hackerrank.com/challenges/arrays-ds/problem)
 
-
+### Length Of Last Word
+[LeetCode length of last word](https://leetcode.com/problems/length-of-last-word/description/)
+Pretty easy. General googling around getting last element of string etc.
 
 
