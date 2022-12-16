@@ -34,3 +34,7 @@ Exposure to linked lists is minimal
 Pretty easy. General googling around getting last element of string etc.
 
 
+### Diagonal Difference
+
+
+
