@@ -25,7 +25,6 @@ Exposure to linked lists is minimal
 
 ### Container With Most Water
 
-
 ### Reverse Array
 [HackerRank reverse an integer array](https://www.hackerrank.com/challenges/arrays-ds/problem)
 
