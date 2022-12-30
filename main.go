@@ -1,9 +1,6 @@
 package main
 
-import (
-	"fmt"
-	problems "leet-code-playingz/problems/strings"
-)
+import problems "leet-code-playingz/problems/arrays"
 
 func main() {
 
@@ -46,11 +43,17 @@ func main() {
 	//sl2 := []int32{5, 6, 7}
 	//sl3 := []int32{1, 2, 5}
 	//slice := [][]int32{sl, sl2, sl3}
-	//
+
 	//sum := problems.DiagonalDifference(slice)
 	//fmt.Println("Sum: ", sum)
 
-	length := problems.LengthOfLastWord("hello worldddd")
-	fmt.Println(length)
+	//length := problems.LengthOfLastWord("hello worldddd")
+	//fmt.Println(length)
+
+	//---Merge Sorted arrays---
+	nums1 := []int{1, 2, 3, 4}
+	nums2 := []int{2, 5, 6, 0, 0, 0}
+
+	problems.MergeSortedArray(nums1, 4, nums2, 3)
 
 }
