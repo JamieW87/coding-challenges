@@ -25,16 +25,6 @@ func MergeSortedArray(nums1 []int, m int, nums2 []int, n int) {
 	c := m + n
 	nums1 = nums1[:c]
 
-	//Loop over to remove zeros
-	//Loops 2 times to remove last zero... Need to find out why it does this?!
-	for x := 0; x < 2; x++ {
-		for i := 0; i < len(nums1); i++ {
-			if nums1[i] == 0 {
-				nums1 = removeZeroIndex(nums1, i)
-			}
-		}
-	}
-
 	//Sort in ascending order.
 	sort.Slice(nums1, func(i int, j int) bool {
 		return nums1[i] < nums1[j]
@@ -42,9 +32,4 @@ func MergeSortedArray(nums1 []int, m int, nums2 []int, n int) {
 
 	fmt.Println(nums1)
 
-}
-
-func removeZeroIndex(s []int, index int) []int {
-
-	return append(s[:index], s[index+1:]...)
 }

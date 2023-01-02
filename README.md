@@ -32,6 +32,10 @@ Exposure to linked lists is minimal
 [LeetCode length of last word](https://leetcode.com/problems/length-of-last-word/description/)
 Pretty easy. General googling around getting last element of string etc.
 
+### Merge sorted array
+[Leetcode Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/description/)
+Nice simple one, good array foundations here. Removing elements, concating slices etc.
+
 
 ### Diagonal Difference
 

@@ -6,7 +6,7 @@ func ContainerWithMostWater(h []int) int {
 	m := 0
 	// Left Index
 	l := 0
-	// Right Index
+	// Right Index (Length of the slice, minus 1)
 	r := len(h) - 1
 
 	//Range until left is equal to right

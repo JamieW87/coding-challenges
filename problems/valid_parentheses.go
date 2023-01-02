@@ -14,6 +14,7 @@ package problems
 //Input: s = "()"
 //Output: true
 
+//TODO Hard, need to look up solutions and about "stacks"
 func isValid(s string) bool {
 	return false
 }
