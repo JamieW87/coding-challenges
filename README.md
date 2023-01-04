@@ -40,4 +40,8 @@ Nice simple one, good array foundations here. Removing elements, concating slice
 ### Diagonal Difference
 
 
+### Plus One
+[LeetCode Plus One](https://leetcode.com/problems/plus-one/)
+
+
 

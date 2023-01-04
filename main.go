@@ -1,6 +1,9 @@
 package main
 
-import problems "leet-code-playingz/problems/arrays"
+import (
+	"fmt"
+	problems "leet-code-playingz/problems/integers"
+)
 
 func main() {
 
@@ -51,9 +54,14 @@ func main() {
 	//fmt.Println(length)
 
 	//---Merge Sorted arrays---
-	nums1 := []int{1, 2, 3, 4}
-	nums2 := []int{2, 5, 6, 0, 0, 0}
+	//nums1 := []int{1, 2, 3, 4}
+	//nums2 := []int{2, 5, 6, 0, 0, 0}
+	//
+	//problems.MergeSortedArray(nums1, 4, nums2, 3)
 
-	problems.MergeSortedArray(nums1, 4, nums2, 3)
+	//---Plus one ---
+	digits := []int{1, 2, 3, 9}
+	plusone := problems.PlusOne(digits)
+	fmt.Println(plusone)
 
 }
